@@ -8,8 +8,13 @@ const adicionarAmigo = () => {
   const nomeDoAmigo = input.value.trim();
 
   if (nomeDoAmigo) {
-    amigos.push(nomeDoAmigo);
-    atualizarAmigos();
+    // Verificar se o amigo já está na lista
+    if (!amigos.includes(nomeDoAmigo)) {
+      amigos.push(nomeDoAmigo);
+      atualizarAmigos();
+    } else {
+      alert("Esse amigo já está na lista.");
+    }
     input.value = "";
   } else {
     alert("Por favor, insira um nome válido.");
