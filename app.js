@@ -45,3 +45,9 @@ const sortearAmigo = () => {
 
   resultado.textContent = amigoSecreto;
 };
+
+const reiniciarJogo = () => {
+  amigos = [];
+  atualizarAmigos();
+  input.value = "";
+};
