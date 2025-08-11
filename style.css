@@ -1,11 +1,9 @@
 :root {
-  --color-primary: #4b69fd;
+  --color-primary: #000000;
   --color-secondary: #fff9eb;
-  --color-tertiary: #c4c4c4;
-  --color-button: #fe652b;
-  --color-button-hover: #e55720;
-  --color-button-restart: #373737;
-  --color-button-restart-hover: #121212;
+  --color-button: #000000;
+  --color-button-hover: #222222;
+  --color-button-text: #fff9eb;
   --color-text: #444444;
   --color-white: #ffffff;
 }
@@ -39,6 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 40px 0 0;
+  gap: 1rem;
 }
 
 /* Seção de entrada */
@@ -63,6 +62,11 @@ body {
   color: var(--color-white);
 }
 
+.img-presente {
+  width: 150px;
+  height: auto;
+}
+
 .section-title {
   font-family: "Inter", serif;
   font-size: 36px;
@@ -85,7 +89,7 @@ body {
   width: 100%;
   padding: 10px;
   border: 2px solid #000;
-  border-radius: 25px 0 0 25px;
+  border-radius: 12px 0 0 12px;
   font-size: 16px;
 }
 
@@ -121,13 +125,13 @@ button {
 }
 
 .button-add {
-  background-color: var(--color-tertiary);
-  color: var(--color-text);
-  border-radius: 0 25px 25px 0;
+  background-color: var(--color-primary);
+  color: var(--color-button-text);
+  border-radius: 0 12px 12px 0;
 }
 
 .button-add:hover {
-  background-color: #a1a1a1;
+  background-color: var(--color-button-hover);
 }
 
 /* Listas */
@@ -140,9 +144,9 @@ ul {
 }
 
 .result-list {
-  margin-top: 15px;
+  margin: 1.5rem 0rem;
   color: #05df05;
-  font-size: 22px;
+  font-size: 32px;
   font-weight: bold;
   text-align: center;
 }
@@ -164,12 +168,4 @@ ul {
 
 .button-draw:hover {
   background-color: var(--color-button-hover);
-}
-
-.button-restart {
-  background-color: var(--color-button-restart);
-}
-
-.button-restart:hover {
-  background-color: var(--color-button-restart-hover);
 }
