@@ -15,6 +15,6 @@ Uma aplicação interativa que sorteia um amigo secreto a partir de uma lista de
 - CSS3
 - JavaScript
 
-## Imagens
+## Imagem
 
 <img src='./assets/app-amigo-secreto.png' alt='Imagem da aplicação' >

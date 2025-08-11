@@ -47,7 +47,7 @@ const sortearAmigo = () => {
   resultado.textContent = amigoSecreto;
 };
 
-const reiniciarJogo = () => {
+const resetarJogo = () => {
   if (amigos.length === 0) {
     return;
   }
