@@ -32,6 +32,7 @@
             id="amigo"
             class="input-name"
             placeholder="Digite um nome"
+            onkeypress="event.key === 'Enter' && adicionarAmigo()"
           />
           <button class="button-add" onclick="adicionarAmigo()">
             Adicionar

@@ -20,6 +20,7 @@ const adicionarAmigo = () => {
   amigos.push(nomeDoAmigo);
   atualizarAmigos();
   input.value = "";
+  input.focus();
 };
 
 const atualizarAmigos = () => {
